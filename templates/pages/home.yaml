@@ -1,0 +1,34 @@
+# When using 'renderType=site' all pages inherit their 'templateScript' value from the site definition which is
+# globally defined for whole the site. This is the reason no page YAML definition defines an explicit 'templateScript'
+# to use. The value inherited and currently used is:
+# templateScript: /travel-demo/templates/pages/main.ftl
+# This might be replaced with the template from 'travel-demo-marketing-tags':
+# templateScript: /travel-demo-marketing-tags/templates/pages/main-marketing-tags.ftl
+
+dialog: travel-demo:pages/homePageProperties
+class: info.magnolia.templating.definition.PageTemplateDefinition
+
+renderType: site
+type: home
+areas:
+  main:
+    type: list
+    availableComponents:
+      tourCarousel:
+        id: tours:components/tourCarousel
+      tourTypeTeaserRow:
+        id: tours:components/tourTypeTeaserRow
+      textImage:
+        id: mtk:components/textImage
+      teaser:
+        id: travel-demo:components/teaser
+      tourList:
+        id: tours:components/tourList
+      columnLayout:
+        id: travel-demo:components/columnLayout
+
+  footer:
+    editable: true
+
+i18nBasename: info.magnolia.module.travel-demo.messages
+title: pages.home
