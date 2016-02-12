@@ -15,6 +15,8 @@
             [#if content.introText?has_content]<p>${content.introText}</p>[/#if]
          </header>
           <div class="main">
+	  Hello!
+
           [@cms.area name="main"/]
           </div>
       </div>
