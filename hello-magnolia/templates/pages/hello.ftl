@@ -18,6 +18,5 @@
           [@cms.area name="main"/]
           </div>
       </div>
-   	Bye!
    </body>
 </html>
